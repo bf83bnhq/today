@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>오늘 · 구글 캘린더·할 일 위젯</title>
+<link rel="icon" href="icon.png">
+<style>
+  :root { --bg:#FFFFFF; --surface:#F4F5F8; --ink:#171A21; --sub:#5E6472; --line:#E8EAF0; --accent:#4352CC; --accentSoft:#EEF0FC; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#15171C; --surface:#1E2128; --ink:#F1F2F5; --sub:#A6ABB8; --line:#2A2E37; --accent:#9AA4FF; --accentSoft:#232744; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:'Pretendard','Segoe UI','Malgun Gothic',sans-serif; letter-spacing:-0.01em; line-height:1.6; }
+  main { max-width:680px; margin:0 auto; padding:64px 20px 48px; }
+  .icon { width:88px; height:88px; border-radius:22px; box-shadow:0 12px 28px rgba(23,26,33,.22); }
+  h1 { font-size:36px; margin:24px 0 4px; letter-spacing:-0.03em; }
+  .lead { font-size:17px; color:var(--sub); margin:0 0 32px; }
+  .features { display:grid; gap:12px; margin:0 0 32px; padding:0; list-style:none; }
+  .features li { background:var(--surface); border-radius:14px; padding:14px 16px; font-size:15px; }
+  .features b { display:block; font-size:15px; }
+  .features span { color:var(--sub); font-size:14px; }
+  .note { border:1px solid var(--line); border-radius:14px; padding:14px 16px; font-size:14px; color:var(--sub); }
+  a { color:var(--accent); }
+  footer { margin-top:40px; font-size:13px; color:var(--sub); }
+</style>
+</head>
+<body>
+<main>
+  <img class="icon" src="icon.png" alt="오늘 앱 아이콘">
+  <h1>오늘</h1>
+  <p class="lead">구글 캘린더 일정과 할 일을 윈도우 바탕화면에서 바로 확인하고 정리하는 위젯</p>
+
+  <ul class="features">
+    <li><b>바탕화면 위젯</b><span>오늘 일정, 다음 일정, 할 일을 한눈에. 작업표시줄 대신 트레이에 조용히 상주함.</span></li>
+    <li><b>양방향 연동</b><span>위젯에서 추가·완료한 내용은 구글 캘린더·Google Tasks에 바로 반영되고, 폰에서 바꾼 내용도 위젯에 반영됨.</span></li>
+    <li><b>먼저 챙겨주는 알림</b><span>일정 시작 전, 할 일 마감일, 평일 아침 브리핑을 윈도우 알림으로.</span></li>
+    <li><b>한 줄 빠른 추가</b><span>"내일 오후 3시 IC 회의"처럼 쓰면 날짜·시간을 알아서 읽어냄.</span></li>
+  </ul>
+
+  <p class="note">
+    이 앱은 사용자가 허용한 구글 캘린더·Google Tasks 정보만 사용하며, 모든 정보는 사용자 PC 안에만 저장됩니다.
+    자세한 내용은 <a href="privacy.html">개인정보처리방침</a>을 확인하세요.
+  </p>
+
+  <footer>오늘 · Windows 10·11용 개인 위젯</footer>
+</main>
+</body>
+</html>
